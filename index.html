@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="/Public/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/Public/images/logo.svg" alt="logo" />
+        </div>
+        <div class="nav_links_container">
+          <img class="close_menu" src="/Public/images/icon-close-menu.svg" alt="close menu icon">
+          <div class="nav_links">
+            <div class="features_dropdown">
+              <a href="#" class="container_dropdown_link"
+                >Features
+                <img
+                  class="rotate_arrow"
+                  src="/Public/images/icon-arrow-down.svg"
+                  alt="icon-arrow-down"
+              /></a>
+              <div class="dropdown_content right">
+                <a href="#" class="dropdown_link">
+                  <img src="/Public/images/icon-todo.svg" alt="todo icon" />
+                  Todo List</a
+                >
+                <a href="#" class="dropdown_link">
+                  <img
+                    src="/Public/images/icon-calendar.svg"
+                    alt="calendar icon"
+                  />
+                  Calendar</a
+                >
+                <a href="#" class="dropdown_link">
+                  <img
+                    src="/Public/images/icon-reminders.svg"
+                    alt="reminders icon"
+                  />
+                  Reminders</a
+                >
+                <a href="#" class="dropdown_link">
+                  <img
+                    src="/Public/images/icon-planning.svg"
+                    alt="planning icon"
+                  />
+                  Planning</a
+                >
+              </div>
+            </div>
+            <div class="company_dropdown">
+              <a href="#" class="container_dropdown_link"
+                >Company
+                <img
+                  class="rotate_arrow"
+                  src="/Public/images/icon-arrow-down.svg"
+                  alt="icon-arrow-down"
+                />
+              </a>
+              <div class="dropdown_content left">
+                <a href="#" class="dropdown_link">History</a>
+                <a href="#" class="dropdown_link">Our Team</a>
+                <a href="#" class="dropdown_link">Blog</a>
+              </div>
+            </div>
+
+            <a class="gray_color" href="#">Careers</a>
+            <a href="#">About</a>
+          </div>
+          <div class="right_side">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+          </div>
+        </div>
+        <a href="#" class="menu_mobile"
+          ><img src="/Public/images/icon-menu.svg" alt="menu icon"
+        /></a>
+        <div class="overlay"></div>
+      </nav>
+    </header>
+    <main>
+      <div class="intro_section">
+        <div class="left_section">
+          <div class="left_section_content">
+            <h1 class="left_section_title">
+              Make <br class="br" />
+              remote work
+            </h1>
+            <p class="left_section_text">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <a class="left_section__link" href="#">Learn more</a>
+          </div>
+          <div class="left_section_clients">
+            <img src="/Public/images/client-databiz.svg" alt="client-laptop" />
+            <img
+              src="/Public/images/client-audiophile.svg"
+              alt="client-audiophile"
+            />
+            <img src="/Public/images/client-meet.svg" alt="client-macbook" />
+            <img
+              src="/Public/images/client-maker.svg"
+              alt="client-smartphone"
+            />
+          </div>
+        </div>
+        <div class="right_section">
+          <img class="desktop" src="/Public//images/image-hero-desktop.png" alt="hero img for desktop">
+          <img class="mobile" src="/Public//images/image-hero-mobile.png" alt="hero img for mobile">
+        </div>
+      </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
