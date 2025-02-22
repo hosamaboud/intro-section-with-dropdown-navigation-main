@@ -25,7 +25,7 @@ a {
 /* start header style */
 header {
   position: relative;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
   width: 100%;
 }
 nav {
@@ -33,6 +33,9 @@ nav {
   display: flex;
   gap: 5rem;
   align-items: center;
+}
+.logo{
+  display: flex;
 }
 .nav_links_container {
   width: 100%;
@@ -125,6 +128,7 @@ nav {
 
 /* start hero section style */
 main {
+  height: 450px;
   padding: 0 6rem;
   margin-top: 2rem;
 }
@@ -134,20 +138,21 @@ main {
 .intro_section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 400px;
 }
 .left_section {
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 4rem;
+  gap: 2rem;
 }
 .left_section_content,
 .left_section_clients {
   display: flex;
 }
 .left_section_content {
-  margin-top: 5rem;
+  margin-top: 1rem;
   flex-direction: column;
   gap: 3rem;
 }
@@ -190,8 +195,7 @@ main {
 
 .right_section {
   display: flex;
-  width: 100%;
-  max-height: 500px;
+  max-height: 400px;
   justify-content: end;
 }
 
@@ -224,6 +228,8 @@ main {
     width: 100%;
   }
   .overlay {
+    transition: opacity 0.3s ease;
+    opacity: 0;
     display: none;
     position: fixed;
     top: 0;
@@ -247,8 +253,11 @@ main {
 
   .overlay.active {
     display: block;
+    opacity: 1;
   }
   .nav_links_container {
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
     z-index: 100;
     display: none;
     flex-direction: column;
@@ -263,6 +272,8 @@ main {
   }
   .nav_links_container.open {
     display: flex;
+
+    transform: translateX(0);
   }
   .nav_links {
     flex-direction: column;
@@ -306,7 +317,6 @@ main {
   .desktop {
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 700px) {
