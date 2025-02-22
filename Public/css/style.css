@@ -25,7 +25,7 @@ a {
 /* start header style */
 header {
   position: relative;
-  padding: 0.5rem 1.5rem;
+  padding: 1.5rem 2rem;
   width: 100%;
 }
 nav {
@@ -128,7 +128,6 @@ nav {
 
 /* start hero section style */
 main {
-  height: 450px;
   padding: 0 6rem;
   margin-top: 2rem;
 }
@@ -138,21 +137,18 @@ main {
 .intro_section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 400px;
 }
 .left_section {
-  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 2rem;
+  gap: 4rem;
 }
 .left_section_content,
 .left_section_clients {
   display: flex;
 }
 .left_section_content {
-  margin-top: 1rem;
+  margin-top: 6rem;
   flex-direction: column;
   gap: 3rem;
 }
@@ -195,12 +191,13 @@ main {
 
 .right_section {
   display: flex;
-  max-height: 400px;
+  max-height: 450px;
   justify-content: end;
 }
 
 .right_section img {
   height: 100%;
+  margin: 0 auto;
 }
 .desktop {
   display: block;
